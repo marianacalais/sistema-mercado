@@ -205,3 +205,6 @@ class Produto:
 
     def desativar(self):
         self.ativo = False
+
+    def ativar(self):
+        self.ativo = True

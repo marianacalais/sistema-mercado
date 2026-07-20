@@ -84,15 +84,12 @@ Representa uma pessoa ou empresa responsável pelo fornecimento de produtos ao e
 
 ### Atributos
 
-- id;
-- nome;
-- nome_fantasia;
-- cpf_cnpj;
-- telefone;
-- email;
-- endereco;
-- observacoes;
-- ativo.
+- id
+- nome
+- cpf_cnpj
+- telefone
+- observacoes
+- ativo
 
 ### Responsabilidades
 
@@ -106,6 +103,10 @@ Representa uma pessoa ou empresa responsável pelo fornecimento de produtos ao e
 - pode fornecer vários Produtos;
 - pode estar associado a várias Compras;
 - uma Compra pertence a um Fornecedor.
+
+### Decisões de Modelagem
+
+> **NOTA:** O modelo inicial previa atributos adicionais para a classe Fornecedor, como nome fantasia, endereço e e-mail. Entretanto, durante o desenvolvimento do sistema e a análise do funcionamento do Mercadinho Caparaó, verificou-se que essas informações não são utilizadas na operação diária do estabelecimento. Para manter o modelo do MVP consistente com a realidade do negócio e evitar o cadastro de dados desnecessários, a classe foi simplificada para conter apenas os atributos efetivamente utilizados: nome, CPF/CNPJ, telefone, observações e status.
 
 ---
 
